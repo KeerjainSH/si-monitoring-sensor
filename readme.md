@@ -1,5 +1,23 @@
 # SI Monitoring Sensor
-## Cara Clone Project Laravel dari Github
+__Web__ __Application__ untuk _monitoring_ data yang masuk dari sensor
+
+## Tampilan
+### Log In/Regsiter
+
+![si-monitoring-sensor-01](https://user-images.githubusercontent.com/64743796/122437418-a6991a00-cfd4-11eb-9074-5c69516b12c3.png)
+
+### Dashboard
+![si-monitoring-sensor-02](https://user-images.githubusercontent.com/64743796/122437468-b44e9f80-cfd4-11eb-945f-19c0509d0876.png)
+
+### Import&Export Data
+![si-monitoring-sensor-04](https://user-images.githubusercontent.com/64743796/122437713-ec55e280-cfd4-11eb-91d7-121e8fa90a93.png)
+
+### Grafik
+![si-monitoring-sensor-03](https://user-images.githubusercontent.com/64743796/122437596-cf211400-cfd4-11eb-98b8-662fe1314e94.png)
+
+
+
+## Cara Clone Project Laravel ini dari Github
 ### Tahap Persiapan
 Pastikan sudah menginstall composer dalam pc anda
 
