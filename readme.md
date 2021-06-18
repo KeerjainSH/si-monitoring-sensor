@@ -19,17 +19,26 @@ __Web__ __Application__ untuk _monitoring_ data yang masuk dari sensor
 
 ## Cara Clone Project Laravel ini dari Github
 ### Tahap Persiapan
-Pastikan sudah menginstall composer dalam pc anda
+
+- Pastikan sudah menginstall composer dalam pc anda
+jika belum, download disini https://getcomposer.org/Composer-Setup.exe
+cara install -> https://jagowebdev.com/cara-install-menjalankan-composer-di-windows/
+(Jangan lupa mengecek ```composer --version``` di cmd untuk mengecek apakah sudah berhasil/tidak)
+
+- Unduhan XAMPP Terbaru disini https://www.apachefriends.org/index.html
+
 
 1. Clone repositori dengan menggunakan command line atau bisa juga dengan mendownload zip nya
 2. Jika menggunakan zip, ekstrak folder project ke direktori xampp/htdocs
 3. Buka command prompt (Jika menggunakan windows), lalu pindahkan working directory ke folder project
 4. Masukkan perintah ```composer install``` pada command prompt, lalu command prompt akan menginstall library yang digunakan dalam project
+    (Troubleshooting, apabila command prompt menunjukkan error _Your requirements could not be resolved to an installable set of packages_,
+    lihat file apa aja yang disebutkan, dan ikuti tutorial ini https://www.youtube.com/watch?v=epAZeeQE1r8&t=46s)
 5. Copy file ```.env.example``` dan beri nama ```.env``` dengan cara memasukkan perintah ```copy .env.example .env``` kedalam comand prompt
 6. Buat kode enkripsi aplikasi laravel dengan memasukkan perintah ```php artisan key:generate```
 
 ### Tahap Penyelarasan Aplikasi dengan Database
-1. Membuka phpmyadmin melalui browser
+1. Membuka phpmyadmin melalui browser (http://localhost/phpmyadmin/)
 2. Buat database baru dengan "nama" yang sesuai dengan keinginan anda
 3. Buka file .env yang dibuat pada tahap persiapan
 4. Pada bagian ini
@@ -49,3 +58,9 @@ ganti ```DB_DATABASE=laravel```, menjadi ```DB_DATABASE="nama" database yang tel
 
 ### Tahap Akhir
 Gunakan perintah ```php artisan serve``` untuk memulai local development server
+
+### Tambahan
+1. Untuk membuka file excel
+   masuk ke direktori ```si-monitoring-sensor```-> ```storage``` -> ```app``` -> ```sensorData.xlsm```
+2. Untuk mengganti header tabel, 
+   masuk ke direktori ```si-monitoring-sensor```->```resources```->```views```->```dashboard.blade.php```->di line-19-23
