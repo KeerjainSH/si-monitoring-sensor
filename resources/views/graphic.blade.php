@@ -55,7 +55,7 @@
           // console.log(data[i][0]) ;
           ds = new Date(data[i][0]) ;
           // console.log(ds) ;
-          data[i][0] = ds.toLocaleTimeString('en-IN') ;
+          data[i][0] = ds.toLocaleString('en-IN') ;
           i++ ;
         }) ;
         console.log(data) ;

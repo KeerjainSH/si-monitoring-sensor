@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();
             $table->timestamps();
-            $table->string('level');
+            $table->string('level')->default('user');
         });
 
         DB::table('users')->insert(

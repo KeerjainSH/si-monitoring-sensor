@@ -31,7 +31,7 @@
 
     </div>
 </div>
-@if ($loggedin->level == 'admin')
+<!-- @if ($loggedin->level == 'admin')
 <div class='card'>
     <div class='card-header border'>
         <i class="fas fa-upload"></i> Import Excel
@@ -58,7 +58,7 @@
 
     </div>
 </div>
-@endif
+@endif -->
 @stop
 
 @section('css')
