@@ -92,4 +92,9 @@ class APIController extends Controller
         \DB::table('sensor')->insert($data_insert);
         return 'success' ;
     }
+
+    public function getStatus($id) {
+        $status = SensorStatus::find($id) ;
+        return $status->status ; 
+    }
 }

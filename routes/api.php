@@ -25,3 +25,5 @@ Route::get('/getGraphicData', [App\Http\Controllers\API\APIController::class, 'g
 Route::post('/addData', [App\Http\Controllers\API\APIController::class, 'addData'])->name('addData') ;
 
 Route::post('/fetchExcel', [App\Http\Controllers\API\APIController::class, 'fetchDataExcel'])->name('syncExcel') ;
+
+Route::get('/getStatus/{id}', [App\Http\Controllers\API\APIController::class, 'getStatus'])->name('getStatus');
