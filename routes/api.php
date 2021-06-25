@@ -26,4 +26,4 @@ Route::post('/addData', [App\Http\Controllers\API\APIController::class, 'addData
 
 Route::post('/fetchExcel', [App\Http\Controllers\API\APIController::class, 'fetchDataExcel'])->name('syncExcel') ;
 
-Route::get('/getStatus/{id}', [App\Http\Controllers\API\APIController::class, 'getStatus'])->name('getStatus');
+Route::get('/getStatus', [App\Http\Controllers\API\APIController::class, 'getStatus'])->name('getStatus');

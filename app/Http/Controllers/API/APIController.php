@@ -93,8 +93,8 @@ class APIController extends Controller
         return 'success' ;
     }
 
-    public function getStatus($id) {
-        $status = SensorStatus::find($id) ;
+    public function getStatus(Request $req) {
+        $status = SensorStatus::find($req->id) ;
         return $status->status ; 
     }
 }
